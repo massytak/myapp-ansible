@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Recupération du projet') {
 steps {
-git 'https://github.com/formation-generic/myapp-ansible'
+git 'https://github.com/massytak/myapp-ansible.git'
 }
 }
 stage('Lancer Ansible') {
