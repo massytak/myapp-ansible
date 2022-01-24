@@ -9,7 +9,7 @@ git 'https://github.com/massytak/myapp-ansible.git'
 stage('Lancer Ansible') {
 steps {
 ansiblePlaybook credentialsId: 'vagrant-private-key', disableHostKeyChecking:
-true, installation: 'ansible2', inventory: '/home/vagrant/local_inventory', playbook: 'apache.yml'
+true, installation: 'ansible2', inventory: 'my_inventory', playbook: 'apache.yml'
 }
 }
 }
